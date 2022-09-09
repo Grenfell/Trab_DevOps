@@ -115,7 +115,7 @@ resource "aws_instance" "principal_instance" {
     EOF
 
   tags = {
-    Name = "principal-instance-${terraform.workspace}-${count.index + 1}"
+    Name = "ec2-${count.index + 1}"
   }
 }
 
